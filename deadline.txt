@@ -4,9 +4,11 @@ Dateline: 15 June 2025 11:59PM:
 1 group report (PDF):
 - Task 1: Architecture diagram (10%)
 - Task 2: 2C (20%)
+
+Capstone (20%):
+---------------
 - Task 3: Capstone project (20%): AWS academy platform
-
-
+AWS Capstone - Due on 8 June 2025, 11.59PM
 
 Task 5: Group Case study report: 1 powerpoint file (10%):
 ----------------------------------------------------------
@@ -22,6 +24,12 @@ Assignment Indiviual (20%)
 --------------------------
 AWS challenge lab + knowledge assessment
 Deadline: 15 June Sunday 11:59PM
+
+
+Group Case Study Report - Due on 8 June 2025, 11.59PM
+Case Study Individual Report - Due on 15 June 2025, 11.59PM
+AWS Capstone - Due on 8 June 2025, 11.59PM
+AWS Knowledge Checks and Challenge Labs - Due on 15 June 2025, 11.59PM
 
 
 
