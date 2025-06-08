@@ -1,0 +1,71 @@
+Choose Create database.
+
+Under Engine options, select MySQL.
+
+The options include several use cases, ranging from enterprise-class databases to Dev/Test systems. In the options, you might notice Amazon Aurora. Aurora is a MySQL-compatible system that was re-architected for the cloud. If your company uses large-scale MySQL or PostgreSQL databases, Aurora can provide enhanced performance.
+
+Set the templates and availability and durability options:
+
+Under the Templates section, select  Dev/Test.
+
+Under the Availability and durability section, select   Single DB instance 
+
+Note: the default Multi-AZ deployment option automatically creates a replica of the database in a second Availability Zone for High Availability, however in this lab that is not needed.
+
+Under the Settings section, configure these options:
+
+DB instance identifier: inventory-db
+
+Master username: admin
+
+Under Credentials management, choose Self managed and configure as follows:
+
+Master password: lab-password
+
+Confirm master password: lab-password
+
+Under the Instance configuration section, configure these options:
+
+Select Burstable classes (includes t classes).
+
+Select db.t3.micro
+
+In the Storage section next
+
+For Storage type choose General Purpose SSD (gp2) from the Dropdown menu.
+
+For Allocated storage  enter 20.
+
+Expand Storage autoscaling 
+
+Clear or Deselect Enable storage autoscaling.
+
+Under the Connectivity section, configure these options: 
+
+Virtual Private Cloud (VPC): Lab VPC
+
+DB subnet group: Keep the default selection
+
+Note: The subnet group created as part of lab setup has two private subnets, one per Availability Zone (AZ). This is required by the RDS service, in case the user changes the configuration to Multi-AZ in future.
+
+Existing VPC security groups: 
+
+Choose DB-SG. It will be highlighted. 
+
+Remove the default security group.
+
+Under Monitoring section, Clear (turn off) the Enable Enhanced monitoring option
+
+Expand the Additional configuration panel, then configure these settings:
+
+Initial database name: inventory
+
+Note: This is the logical name of the database that will be used by the application.
+
+ Feel free to review the many other options displayed on the page, but leave them set to their default values. Options include automatic backups, the ability to export log files, and automatic version upgrades. The ability to activate these features through check boxes demonstrates the power of using a fully managed database solution instead of installing, backing up, and maintaining the database yourself.
+
+Choose Create database (at the bottom of the page).
+
+You should receive a message indicating that your database is being created.
+
+Before you continue to the next task, the database instance status must be Available. This process might take several minutes.
